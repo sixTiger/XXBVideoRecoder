@@ -13,12 +13,11 @@
 		62A7B8DC1F4E7B61000B48B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62A7B8DB1F4E7B61000B48B5 /* Assets.xcassets */; };
 		62A7B8DF1F4E7B61000B48B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62A7B8DD1F4E7B61000B48B5 /* LaunchScreen.storyboard */; };
 		62A7B8E81F4E7E6C000B48B5 /* XXBAVRecoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8E71F4E7E6C000B48B5 /* XXBAVRecoderController.m */; };
-		62A7B8EB1F4E7E84000B48B5 /* XXBXBRecoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8EA1F4E7E84000B48B5 /* XXBXBRecoderController.m */; };
+		62A7B8EB1F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8EA1F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.m */; };
 		62A7B8F71F4E81AD000B48B5 /* XXBAudioRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8F61F4E81AD000B48B5 /* XXBAudioRecoder.m */; };
 		62A7B8FA1F4E81CE000B48B5 /* XXBAVRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8F91F4E81CE000B48B5 /* XXBAVRecoder.m */; };
 		62A7B8FD1F4E9B6D000B48B5 /* XXBAudioToolboxRecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8FC1F4E9B6D000B48B5 /* XXBAudioToolboxRecoder.m */; };
 		62A7B9001F4E9ECF000B48B5 /* XXBAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B8FF1F4E9ECF000B48B5 /* XXBAudioPlayer.m */; };
-		62A7B9031F4EA06A000B48B5 /* XXBFileHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 62A7B9021F4EA06A000B48B5 /* XXBFileHelper.m */; };
 		97C5F25E7812156759F14F40 /* libPods-XXBVideoRecoderDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 31268441C0AF153B1F74DDF1 /* libPods-XXBVideoRecoderDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,8 @@
 		62A7B8E01F4E7B61000B48B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62A7B8E61F4E7E6C000B48B5 /* XXBAVRecoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAVRecoderController.h; sourceTree = "<group>"; };
 		62A7B8E71F4E7E6C000B48B5 /* XXBAVRecoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAVRecoderController.m; sourceTree = "<group>"; };
-		62A7B8E91F4E7E84000B48B5 /* XXBXBRecoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBXBRecoderController.h; sourceTree = "<group>"; };
-		62A7B8EA1F4E7E84000B48B5 /* XXBXBRecoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBXBRecoderController.m; sourceTree = "<group>"; };
+		62A7B8E91F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAudioToolboxRecoderController.h; sourceTree = "<group>"; };
+		62A7B8EA1F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAudioToolboxRecoderController.m; sourceTree = "<group>"; };
 		62A7B8F51F4E81AD000B48B5 /* XXBAudioRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAudioRecoder.h; sourceTree = "<group>"; };
 		62A7B8F61F4E81AD000B48B5 /* XXBAudioRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAudioRecoder.m; sourceTree = "<group>"; };
 		62A7B8F81F4E81CE000B48B5 /* XXBAVRecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAVRecoder.h; sourceTree = "<group>"; };
@@ -45,8 +44,6 @@
 		62A7B8FC1F4E9B6D000B48B5 /* XXBAudioToolboxRecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAudioToolboxRecoder.m; sourceTree = "<group>"; };
 		62A7B8FE1F4E9ECF000B48B5 /* XXBAudioPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBAudioPlayer.h; sourceTree = "<group>"; };
 		62A7B8FF1F4E9ECF000B48B5 /* XXBAudioPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBAudioPlayer.m; sourceTree = "<group>"; };
-		62A7B9011F4EA06A000B48B5 /* XXBFileHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXBFileHelper.h; sourceTree = "<group>"; };
-		62A7B9021F4EA06A000B48B5 /* XXBFileHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXBFileHelper.m; sourceTree = "<group>"; };
 		6464C1C1B5C88B3492BF0FAA /* Pods-XXBVideoRecoderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XXBVideoRecoderDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XXBVideoRecoderDemo/Pods-XXBVideoRecoderDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,8 +98,8 @@
 				62A7B8CF1F4E7B61000B48B5 /* Supporting Files */,
 				62A7B8E61F4E7E6C000B48B5 /* XXBAVRecoderController.h */,
 				62A7B8E71F4E7E6C000B48B5 /* XXBAVRecoderController.m */,
-				62A7B8E91F4E7E84000B48B5 /* XXBXBRecoderController.h */,
-				62A7B8EA1F4E7E84000B48B5 /* XXBXBRecoderController.m */,
+				62A7B8E91F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.h */,
+				62A7B8EA1F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.m */,
 			);
 			path = XXBVideoRecoderDemo;
 			sourceTree = "<group>";
@@ -122,8 +119,6 @@
 				62A7B8F61F4E81AD000B48B5 /* XXBAudioRecoder.m */,
 				62A7B8FE1F4E9ECF000B48B5 /* XXBAudioPlayer.h */,
 				62A7B8FF1F4E9ECF000B48B5 /* XXBAudioPlayer.m */,
-				62A7B9011F4EA06A000B48B5 /* XXBFileHelper.h */,
-				62A7B9021F4EA06A000B48B5 /* XXBFileHelper.m */,
 				62A7B8EE1F4E7F2B000B48B5 /* AudioToolbox */,
 				62A7B8ED1F4E7EC7000B48B5 /* AVFoundation */,
 			);
@@ -284,12 +279,11 @@
 				62A7B8FD1F4E9B6D000B48B5 /* XXBAudioToolboxRecoder.m in Sources */,
 				62A7B8D41F4E7B61000B48B5 /* AppDelegate.m in Sources */,
 				62A7B8E81F4E7E6C000B48B5 /* XXBAVRecoderController.m in Sources */,
-				62A7B9031F4EA06A000B48B5 /* XXBFileHelper.m in Sources */,
 				62A7B8D11F4E7B61000B48B5 /* main.m in Sources */,
 				62A7B9001F4E9ECF000B48B5 /* XXBAudioPlayer.m in Sources */,
 				62A7B8F71F4E81AD000B48B5 /* XXBAudioRecoder.m in Sources */,
 				62A7B8FA1F4E81CE000B48B5 /* XXBAVRecoder.m in Sources */,
-				62A7B8EB1F4E7E84000B48B5 /* XXBXBRecoderController.m in Sources */,
+				62A7B8EB1F4E7E84000B48B5 /* XXBAudioToolboxRecoderController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +406,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 94ZS59957Y;
 				INFOPLIST_FILE = XXBVideoRecoderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBVideoRecoderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,6 +422,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = XXBVideoRecoderDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.baidu.XXBVideoRecoderDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

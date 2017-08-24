@@ -44,6 +44,7 @@ static id _instance = nil;
 }
 
 - (void)setupData {
+    
 }
 
 - (void)startRecoder {
@@ -55,6 +56,10 @@ static id _instance = nil;
 }
 
 - (void)stopRecoder {
+    NSAssert(NO, @"需要子类去实现");
+}
+
+- (void)resetRecoder {
     NSAssert(NO, @"需要子类去实现");
 }
 @end

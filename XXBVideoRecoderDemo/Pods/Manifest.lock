@@ -1,3 +1,28 @@
-PODFILE CHECKSUM: f2452ad207132974b0a0915e9cc50ce825680019
+PODS:
+  - XXBLibs (0.0.3):
+    - XXBLibs/Category (= 0.0.3)
+    - XXBLibs/Class (= 0.0.3)
+    - XXBLibs/Others (= 0.0.3)
+  - XXBLibs/Category (0.0.3)
+  - XXBLibs/Class (0.0.3):
+    - XXBLibs/Others
+  - XXBLibs/Others (0.0.3)
+
+DEPENDENCIES:
+  - XXBLibs (from `https://github.com/sixTiger/XXBLibs`)
+
+EXTERNAL SOURCES:
+  XXBLibs:
+    :git: https://github.com/sixTiger/XXBLibs
+
+CHECKOUT OPTIONS:
+  XXBLibs:
+    :commit: 58e45b84ad38ee72e1f30539aa626afb1f9936de
+    :git: https://github.com/sixTiger/XXBLibs
+
+SPEC CHECKSUMS:
+  XXBLibs: e0c5e1a0b3f085a011d68bf123b441aa77f1a749
+
+PODFILE CHECKSUM: 07ae8977251827d386e362c58d7b4c769da06b44
 
 COCOAPODS: 1.2.1

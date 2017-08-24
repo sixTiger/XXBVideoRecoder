@@ -9,6 +9,11 @@
 #import "XXBAudioPlayer.h"
 #import <AVFoundation/AVFoundation.h>
 
+
+@interface XXBAudioPlayer ()
+
+@property(nonatomic, strong) AVAudioPlayer    *audioPlayer;
+@end
 @implementation XXBAudioPlayer
 static id _instance = nil;
 + (instancetype)shareAudioPlayer {
@@ -44,5 +49,52 @@ static id _instance = nil;
 }
 
 - (void)setupData {
+}
+
+
+- (void)startPlayer {
+    if (self.audioPlayer == nil) {
+        [self resetAudioPlayer];
+    }
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+    [self.audioPlayer play];
+}
+
+- (void)pausePlayer {
+    [self.audioPlayer pause];
+}
+
+- (void)stopPlayer {
+    [self.audioPlayer stop];
+}
+
+- (void)setPath:(NSString *)path {
+    
+    switch (self.playerState) {
+        case XXBAudioPlayerStateDefault:
+            _path = [path copy];
+            break;
+        case XXBAudioPlayerStateRecoding:
+            
+            break;
+        case XXBAudioPlayerStatePause:
+            
+            break;
+        case XXBAudioPlayerStateStop:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)resetAudioPlayer {
+    NSError *error;
+    NSURL *url = [NSURL fileURLWithPath:self.path];
+    self.audioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:&error];
+    if (error) {
+        NSLog(@"XXB | %s [Line %d] %@ \nerror:%@",__func__,__LINE__,[NSThread currentThread],error);
+    }
 }
 @end

@@ -1,13 +1,13 @@
 //
-//  XXBFileHelper.h
+//  XXBXBRecoderController.h
 //  XXBVideoRecoderDemo
 //
 //  Created by xiaobing on 2017/8/24.
 //  Copyright © 2017年 xiaobing. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface XXBFileHelper : NSObject
+@interface XXBAudioToolboxRecoderController : UIViewController
 
 @end

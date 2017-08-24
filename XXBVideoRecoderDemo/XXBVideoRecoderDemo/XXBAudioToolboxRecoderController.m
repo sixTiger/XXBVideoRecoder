@@ -6,17 +6,18 @@
 //  Copyright © 2017年 xiaobing. All rights reserved.
 //
 
-#import "XXBXBRecoderController.h"
+#import "XXBAudioToolboxRecoderController.h"
 
-@interface XXBXBRecoderController ()
+@interface XXBAudioToolboxRecoderController ()
 
 @end
 
-@implementation XXBXBRecoderController
+@implementation XXBAudioToolboxRecoderController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.title = @"AudioToolbox";
 }
 
 - (void)didReceiveMemoryWarning {

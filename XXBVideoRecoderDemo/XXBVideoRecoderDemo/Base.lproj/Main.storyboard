@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Recoder Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="XXBAVRecoderController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,19 +21,81 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eo3-gi-V1j">
+                                <rect key="frame" x="150.5" y="508" width="74" height="30"/>
+                                <color key="backgroundColor" red="0.98766789749999995" green="1" blue="0.025480071060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="停止"/>
+                                <connections>
+                                    <action selector="stopRecoderClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AG5-Px-ygb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ma1-Xl-i6e">
+                                <rect key="frame" x="264.5" y="508" width="74.5" height="30"/>
+                                <color key="backgroundColor" red="0.98766789749999995" green="1" blue="0.025480071060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="重置"/>
+                                <connections>
+                                    <action selector="resetRecoderClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DCR-ah-eKD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isk-LS-yhG">
+                                <rect key="frame" x="36" y="568" width="131.5" height="30"/>
+                                <color key="backgroundColor" red="0.98766789748958694" green="1" blue="0.025480071056724563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="播放"/>
+                                <connections>
+                                    <action selector="playAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CPo-t6-loO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kth-9V-Aew">
+                                <rect key="frame" x="207.5" y="568" width="131.5" height="30"/>
+                                <color key="backgroundColor" red="0.98766789749999995" green="1" blue="0.025480071060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="停止播放"/>
+                                <connections>
+                                    <action selector="stopPlayAudio:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bjC-WE-4ET"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osY-OR-Kfy">
+                                <rect key="frame" x="36" y="508" width="74.5" height="30"/>
+                                <color key="backgroundColor" red="0.98766789749999995" green="1" blue="0.025480071060000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="开始"/>
+                                <connections>
+                                    <action selector="recoderClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vTw-pu-0i4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.70191149518302987" blue="0.080035771046601534" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="isk-LS-yhG" firstAttribute="top" secondItem="osY-OR-Kfy" secondAttribute="bottom" constant="30" id="5LI-oz-oeV"/>
+                            <constraint firstItem="Eo3-gi-V1j" firstAttribute="leading" secondItem="osY-OR-Kfy" secondAttribute="trailing" constant="40" id="7G9-l4-b9p"/>
+                            <constraint firstItem="Eo3-gi-V1j" firstAttribute="width" secondItem="osY-OR-Kfy" secondAttribute="width" id="7cc-fS-Ph8"/>
+                            <constraint firstItem="Ma1-Xl-i6e" firstAttribute="width" secondItem="Eo3-gi-V1j" secondAttribute="width" id="Jo8-Ly-ZKv"/>
+                            <constraint firstItem="Kth-9V-Aew" firstAttribute="width" secondItem="isk-LS-yhG" secondAttribute="width" id="L2Y-K3-Lp1"/>
+                            <constraint firstItem="Ma1-Xl-i6e" firstAttribute="leading" secondItem="Eo3-gi-V1j" secondAttribute="trailing" constant="40" id="XFt-Qd-ycB"/>
+                            <constraint firstItem="osY-OR-Kfy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Xg1-kx-yzS"/>
+                            <constraint firstItem="isk-LS-yhG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="ePO-g2-njb"/>
+                            <constraint firstItem="Kth-9V-Aew" firstAttribute="leading" secondItem="isk-LS-yhG" secondAttribute="trailing" constant="40" id="fj7-id-cAs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Kth-9V-Aew" secondAttribute="trailing" constant="20" id="gjs-TP-9SX"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kth-9V-Aew" secondAttribute="bottom" constant="20" id="gp8-8Y-Ha7"/>
+                            <constraint firstItem="Ma1-Xl-i6e" firstAttribute="bottom" secondItem="Eo3-gi-V1j" secondAttribute="bottom" id="ocY-Gv-eyD"/>
+                            <constraint firstItem="Eo3-gi-V1j" firstAttribute="bottom" secondItem="osY-OR-Kfy" secondAttribute="bottom" id="ybb-qb-MbG"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="isk-LS-yhG" secondAttribute="bottom" constant="20" id="z0e-Ui-6jh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ma1-Xl-i6e" secondAttribute="trailing" constant="20" id="zzq-oO-aqg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="rAv-gQ-ylQ"/>
+                    <connections>
+                        <outlet property="startRecoderButton" destination="osY-OR-Kfy" id="0OJ-SY-9rW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2024.8" y="-559.07046476761627"/>
         </scene>
-        <!--AV-->
+        <!--AVRecoder-->
         <scene sceneID="X7f-VB-r4d">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="YhA-dp-Jod" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="AV" id="FND-xE-igO"/>
+                    <tabBarItem key="tabBarItem" title="AVRecoder" id="FND-xE-igO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wMO-H3-EKG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -47,10 +110,10 @@
             </objects>
             <point key="canvasLocation" x="1008.8" y="-559.07046476761627"/>
         </scene>
-        <!--View Controller-->
+        <!--Audio Toolbox Recoder Controller-->
         <scene sceneID="FUK-lX-tFr">
             <objects>
-                <viewController id="okq-Mc-b6A" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="okq-Mc-b6A" customClass="XXBAudioToolboxRecoderController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2oK-Tb-YbN"/>
                         <viewControllerLayoutGuide type="bottom" id="eDT-Gk-wty"/>
@@ -58,7 +121,7 @@
                     <view key="view" contentMode="scaleToFill" id="Ndp-Cv-8v6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0022524913339013741" green="0.82774623976356343" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="uOZ-fr-kRf"/>
                 </viewController>
@@ -66,11 +129,11 @@
             </objects>
             <point key="canvasLocation" x="2025" y="117"/>
         </scene>
-        <!--XB-->
+        <!--AVRecoder-->
         <scene sceneID="yZO-US-xm2">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ysX-UV-qvD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="XB" id="3IG-vJ-LNY"/>
+                    <tabBarItem key="tabBarItem" title="AVRecoder" id="3IG-vJ-LNY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="z5J-MT-oXA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>

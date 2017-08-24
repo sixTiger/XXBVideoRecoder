@@ -20,6 +20,9 @@ typedef enum : NSUInteger {
 
 @end
 @interface XXBAudioRecoder : NSObject
+{
+    NSString    *_recoderPath;
+}
 @property(nonatomic, copy) NSString                     *recoderPath;
 @property(nonatomic, weak) id<XXBAudioRecoderDelegate>  delegate;
 @property(nonatomic, assign) XXBAudioRecoderState       recoderState;
@@ -28,4 +31,5 @@ typedef enum : NSUInteger {
 - (void)startRecoder;
 - (void)pauseRecoder;
 - (void)stopRecoder;
+- (void)resetRecoder;
 @end
